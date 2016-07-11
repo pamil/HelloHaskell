@@ -18,7 +18,6 @@ myButLast (_:xs) = myButLast xs
 -- P03: Find the K'th element of a list. The first element in the list is number 1.
 
 elementAt :: [a] -> Int -> a
-
 elementAt a b = a !! (b - 1)
 
 -- P04: Find the number of elements of a list.

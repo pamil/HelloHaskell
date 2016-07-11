@@ -9,8 +9,8 @@ main = hspec spec
 spec :: Spec
 spec = do
   describe "myLast" $ do
-    it "returns last element of an integer array" $ do
+    it "returns the last element of an integer list" $ do
       myLast [1, 2, 3, 4] `shouldBe` 4
 
-    it "returns last element of a string array" $ do
+    it "returns the last element of a string" $ do
       myLast "Hello!" `shouldBe` '!'
