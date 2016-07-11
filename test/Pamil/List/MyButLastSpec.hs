@@ -1,7 +1,7 @@
 module Pamil.List.MyButLastSpec (main, spec) where
 
 import Test.Hspec
-import Pamil.List (myButLast)
+import Pamil.List.MyButLast
 
 main :: IO ()
 main = hspec spec

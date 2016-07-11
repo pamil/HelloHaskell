@@ -1,7 +1,7 @@
 module Pamil.List.MyLastSpec (main, spec) where
 
 import Test.Hspec
-import Pamil.List (myLast)
+import Pamil.List.MyLast
 
 main :: IO ()
 main = hspec spec

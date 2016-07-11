@@ -1,7 +1,7 @@
 module Pamil.List.ElementAtSpec (main, spec) where
 
 import Test.Hspec
-import Pamil.List (elementAt)
+import Pamil.List.ElementAt
 
 main :: IO ()
 main = hspec spec

@@ -1,7 +1,7 @@
 module Pamil.List.MyLengthSpec (main, spec) where
 
 import Test.Hspec
-import Pamil.List (myLength)
+import Pamil.List.MyLength
 
 main :: IO ()
 main = hspec spec
