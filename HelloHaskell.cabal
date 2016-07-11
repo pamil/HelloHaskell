@@ -1,0 +1,33 @@
+name:                HelloHaskell
+version:             0.1.0
+homepage:            https://github.com/pamil/HelloHaskell
+license:             MIT
+author:              Kamil Kokot
+maintainer:          kamil@kokot.me
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  ghc-options:         -Wall
+  hs-source-dirs:      src
+  exposed-modules:     Pamil.List
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+test-suite Haskell-test
+  type:                exitcode-stdio-1.0
+  ghc-options:         -Wall
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , HelloHaskell
+                     , QuickCheck
+                     , HUnit
+                     , hspec
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/pamil/HelloHaskell
