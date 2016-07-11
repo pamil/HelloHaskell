@@ -14,3 +14,8 @@ myButLast [] = error "Cannot get the last but one element of an empty list!"
 myButLast (_:[]) = error "Cannot get the last but one element of a list with only one element!"
 myButLast (x:_:[]) = x
 myButLast (_:xs) = myButLast xs
+
+-- P03: Find the K'th element of a list. The first element in the list is number 1.
+
+elementAt :: [a] -> Int -> a
+elementAt a b = a !! (b - 1)
