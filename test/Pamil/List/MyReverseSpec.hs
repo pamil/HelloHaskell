@@ -19,10 +19,10 @@ spec = do
     it "returns empty list if empty list is given" $ do
       myReverse ([] :: [Int]) `shouldBe` ([] :: [Int])
 
-    it "returns values with the same length" $
-      property $ \s -> let _ = (s :: String) in
+    it "returns values with the same length" . property $
+      \s -> let _ = (s :: String) in
         length (myReverse s) == length s
 
-    it "returns the same value if applied twice" $
-      property $ \s -> let _ = (s :: String) in
+    it "returns the same value if applied twice" . property $
+      \s -> let _ = (s :: String) in
         myReverse (myReverse s) == s
