@@ -5,5 +5,5 @@ module Pamil.List.Quicksort where
 quicksort :: (Ord a) => [a] -> [a]
 quicksort [] = []
 quicksort (x:xs) = smallerOrEqual ++ [x] ++ bigger
-  where smallerOrEqual = quicksort [ y | y <- xs, y <= x]
-        bigger         = quicksort [ y | y <- xs, y > x]
+    where smallerOrEqual = quicksort [ y | y <- xs, y <= x]
+          bigger         = quicksort [ y | y <- xs, y > x]

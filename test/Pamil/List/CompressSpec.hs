@@ -8,9 +8,9 @@ main = hspec spec
 
 spec :: Spec
 spec = do
-  describe "compress" $ do
-    it "compresses string" $ do
-      compress "aaabbcdddeef" `shouldBe` "abcdef"
+    describe "compress" $ do
+        it "compresses string" $ do
+            compress "aaabbcdddeef" `shouldBe` "abcdef"
 
-    it "compresses an integer list" $ do
-      compress [1, 1, 2, 1, 3, 3, 3, 4, 4] `shouldBe` [1, 2, 1, 3, 4]
+        it "compresses an integer list" $ do
+            compress [1, 1, 2, 1, 3, 3, 3, 4, 4] `shouldBe` [1, 2, 1, 3, 4]
