@@ -7,4 +7,4 @@ myLength [] = 0
 myLength (_:xs) = 1 + myLength xs
 
 myLength' :: [a] -> Int
-myLength' = foldr (\_ -> (+1)) 0
+myLength' = foldr (const (+1)) 0
