@@ -7,4 +7,4 @@ myLength [] = 0
 myLength (_:xs) = 1 + myLength xs
 
 myLength' :: [a] -> Int
-myLength' = foldl (\acc _ -> 1 + acc) 0
+myLength' = foldr (\_ -> (+1)) 0
